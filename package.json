@@ -1,0 +1,12 @@
+{
+  "name": "webRebot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com.cnpmjs.org/dengzhiteng/webRebot.git",
+  "author": "dengzhiteng <dengzhiteng@jwx.com.cn>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "download": "^8.0.0"
+  }
+}
