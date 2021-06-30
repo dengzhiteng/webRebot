@@ -13,9 +13,10 @@ server.download(url, function (data) {
     let imageSrc = [];
     $("img").each(function (i, e) {
       var src = $(e).attr("src");
-      src = src.includes("http") ? src : url + src;
-      imageSrc.push(src);
+      src = src.includes("http") ? src : "http://www.hunangy.com/" + src;
+      imageSrc.push(encodeURI(src));
     });
+    console.log(imageSrc);
     imageSrc.map((item) => {
       (async () => {
         await download(item, "dist/images/hunangy");
